@@ -1,0 +1,86 @@
+
+@charset "utf-8";
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,  font, img, ins, kbd, q, s, samp, small, strike, strong, sup, sub, tt, var, b, u, i, center, ul, ol, li, dl, dt, dd,  table, tr, th, td, thead, tbody, tfoot, caption, form, fieldset, legend, input, button, textarea, select, label,  applet, object, iframe, audio, video, canvas, article, aside, canvas, details, figcaption, figure, footer, header,  hgroup, menu, nav, section, summary {
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+div {
+	overflow: hidden;
+}
+
+.main {
+	
+	margin: 0 auto;
+}
+.foot {
+	margin-bottom: 40px;
+	width: 100%;
+	background: #339967;
+	font-family: '\005fae\008f6f\0096c5\009ed1';
+	color: #FFF;
+}
+.foot h3 {
+	width: 108px;
+	height: 25px;
+	margin: 14px auto 28px auto;
+}
+.foot p {
+	line-height: 38px;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+}
+ @keyframes change {
+ 0% {
+transform: scale(.8);
+}
+ 50% {
+transform: scale(1);
+}
+ 100% {
+transform: scale(.8);
+}
+}
+@-webkit-keyframes change {
+ 0% {
+-webkit-transform: scale(.8);
+}
+ 50% {
+-webkit-transform: scale(1);
+}
+ 100% {
+-webkit-transform: scale(.8);
+}
+}
+@-moz-keyframes change {
+ 0% {
+-moz-transform: scale(.8);
+}
+ 50% {
+-moz-transform: scale(1);
+}
+ 100% {
+-moz-transform: scale(.8);
+}
+}
+
+fieldset,img{border:0}ol,ul{list-style:none}address,em{font-style:normal}a{color:#000;text-decoration:none}
+table{border-collapse:collapse;}
+img{vertical-align:top; max-width: 100%;}
+
+
+
+.main{
+	min-width: 320px;
+	max-width: 640px;
+	font-size: 14px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.main > *{font-size: 0.8em;}
+
+
